@@ -14,9 +14,9 @@
         <h2>Architects</h2>
         <div class="nav-menu">
           <a href="#">Home</a>
-          <a href="about">About</a>
-          <a href="contact-us">Contact Us</a>
-          <a href="">Login</a>
+          <a href="#">About</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Login</a>
         </div>
       </nav>
       <section class="banner-section container">
@@ -59,7 +59,7 @@
           <div class="banner-btn"><a href="#" class="btn">Explore More</a></div>
         </div>
       </section>
-      <section id="about" class="loved-feature">
+      <section class="loved-feature">
         <div class="loved-feature-info">
           <div class="loved-feature-title-details">
             <div class="loved-feature-title">
@@ -179,20 +179,29 @@
           />
         </div>
       </section>
-      <section id="contact-us" class="contact-us">
+      <section class="contact-us">
         <h2>Contact Us</h2>
         <div class="contact-us-form">
           <div>
-            <label for="fname">Full name*</label>
-            <input type="text" id="fname" />
+            <label for="fname">First name*</label>
+            <input placeholder="Type your first name" type="text" id="fname" />
+          </div>
+          <div>
+            <label for="lname">Last name</label>
+            <input placeholder="Type your last name" type="text" id="lname" />
           </div>
           <div>
             <label for="email">Email*</label>
-            <input type="text" id="email" />
+            <input placeholder="Type your email" type="email" id="email" />
           </div>
           <div class="contact-us-form-message">
             <label for="messsage">Message</label>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <textarea
+              placeholder="Type your message"
+              class="textarea"
+              name=""
+              id=""
+            ></textarea>
           </div>
         </div>
         <div class="contact-us-btn"><a href="#" class="btn">Submit</a></div>

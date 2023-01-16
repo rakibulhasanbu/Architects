@@ -7,7 +7,7 @@
   font-family: "Work Sans", sans-serif;
 }
 .container {
-  max-width: 90vw;
+  max-width: 80vw;
   margin: 0 auto;
 }
 .btn {
@@ -102,12 +102,12 @@
   gap: 1.2vw;
 }
 .quick-list-feature-image > div {
-  height: 43vh;
+  height: 33vh;
 }
 .quick-list-feature-image > div > img {
   height: 100%;
   width: 100%;
-  border-radius: 0.6vw;
+  border-radius: 10px;
   object-fit: cover;
 }
 .quick-list-title-1 {
@@ -224,6 +224,120 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 1vw;
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  width: 14vw;
+  height: 28.4vh;
+}
+.facts-achievement-box > h3 {
+  font-weight: 600;
+  font-size: 2.5vw;
+  color: #424242;
+}
+.facts-achievement-box > p {
+  font-weight: 600;
+  font-size: 1.3vw;
+  color: #727272;
+}
+.facts-achievement-box:hover {
+  transform: rotate(20deg);
+  transition-duration: 1s;
+}
+/* sponsors section style starts here   */
+.sponsors {
+  padding: 2.4vw 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4vw;
+}
+.sponsors-title {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2vw;
+  align-items: center;
+  text-align: center;
+}
+.sponsors-title > h3 {
+  font-size: 3vw;
+  color: #131313;
+}
+.sponsors-title > p {
+  font-weight: 400;
+  font-size: 1.2vw;
+  color: #727272;
+}
+.sponsors-company {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sponsors-company > img {
+  width: 10vw;
+}
+/* contact-us style start here  */
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  padding: 3vw;
+}
+.contact-us > h2 {
+  text-align: center;
+  font-size: 3vw;
+  color: #131313;
+}
+.contact-us-form {
+  width: 60%;
+  margin: 0 auto;
+  display: grid;
+  align-items: center;
+  row-gap: 1vw;
+  column-gap: 3vw;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+.contact-us-form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2vw;
+}
+.contact-us-form > div > label {
+  font-size: 1.2vw;
+  color: #424242;
+}
+.contact-us-form > div > input {
+  width: 100%;
+  height: 5vh;
+  padding: 0.8vw;
+  border: 0.12vw solid #727272;
+}
+.contact-us-form > div > input:focus {
+  outline: none;
+}
+.contact-us-form-message {
+  grid-column: 2/3;
+  grid-row: 1/-1;
+}
+.textarea {
+  height: 26vh;
+  padding: 1vw;
+  resize: none;
+  overflow: auto;
+}
+.textarea:focus {
+  outline: none;
+}
+.contact-us-btn {
+  display: flex;
+  justify-content: center;
+}
+.contact-us-btn > a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
 }
 /* footer section style starts here  */
 .footer-section {
@@ -252,7 +366,30 @@
     height: 26vh;
   }
   .quick-list-feature-details {
+    width: 60%;
     text-align: center;
+  }
+  .loved-feature {
+    padding: 0;
+  }
+  .facts-achievement-box {
+    height: 12vh;
+  }
+  .contact-us {
+    height: 45vh;
+  }
+  .contact-us-form {
+    width: 100%;
+    row-gap: 0vw;
+    column-gap: 3vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .contact-us-form > div > input {
+    height: 3vh;
+  }
+  .textarea {
+    height: 12vh;
   }
 }
 /* responsive style for phone starts here  */
@@ -264,6 +401,59 @@
     width: 90%;
   }
   .banner-image {
-    height: 30vh;
+    height: 40vh;
+  }
+  .quick-list-feature {
+    flex-direction: column;
+    padding: 5vw 0;
+  }
+  .quick-list-feature-image > div {
+    height: 26vh;
+  }
+  .quick-list-feature-details {
+    width: 60%;
+    text-align: center;
+  }
+  .loved-feature {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .loved-feature-image {
+    height: 60vh;
+  }
+  .loved-feature-image-btn {
+    bottom: 0.5vw;
+    left: 0.5vw;
+  }
+  .facts-achievement {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .facts-achievement-box {
+    margin: 1vh auto;
+    width: 60%;
+    height: 10vh;
+  }
+  .facts-achievement-box > img {
+    height: 3vh;
+  }
+  .contact-us {
+    height: 26vh;
+  }
+  .contact-us-form {
+    width: 100%;
+    row-gap: 0vw;
+    column-gap: 3vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .contact-us-form > div > input {
+    height: 3vh;
+  }
+  .textarea {
+    height: 12vh;
+  }
+  .footer-section {
+    height: 10vh;
   }
 }
